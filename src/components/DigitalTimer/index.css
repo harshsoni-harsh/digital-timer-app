@@ -1,0 +1,92 @@
+/* Write your CSS here */
+
+.body {
+  background: linear-gradient(to right, white, #cffcf1, #defafe);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 30%;
+}
+.time {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+}
+.time > div {
+  background-color: white;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.time > div > p {
+  margin: 0;
+  font-weight: bold;
+}
+.timeDisplay {
+  color: #00d9f5;
+  font-size: 35px;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+button > p {
+  margin: 0;
+}
+button > img {
+  height: 30px;
+  margin-right: 10px;
+}
+.pauseReset {
+  display: flex;
+}
+.increaseDecrease {
+  display: flex;
+}
+.increaseDecrease > p {
+  background: linear-gradient(to right, #53f3b9, #91efeb);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.increaseDecrease > * {
+  margin: 20px 10px;
+}
+.setLimit {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+}
